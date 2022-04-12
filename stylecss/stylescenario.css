@@ -1,0 +1,196 @@
+
+/*-----------------Body------------------*/
+
+body
+{
+   background-color:#808080;
+	color:#ffffff;
+   font-family:"Trebuchet MS",Verdana,sans-serif;
+   font-size:small;
+   margin:0;
+   padding:0;
+}
+
+/*-----------------Footer------------------*/
+
+footer {
+	width: 97.4%;
+	max-height:auto;
+	position: absolute;
+
+	margin-top:1470px;
+	margin-left:20px;
+
+	padding: 8px 0 8px 16px;
+	background-color: #333333;
+	
+	z-index: 100;
+	font-size: medium;
+}
+
+p{
+	text-align:center;
+}
+
+.iconinsta{
+	width: 40px;
+	position:absolute;
+	right:100px;
+	top:14px;
+
+}
+
+.iconfacebook{
+	width: 40px;
+	position:absolute;
+	right:200px;
+	top:14px;
+
+}
+
+.icontwitter{
+	width: 40px;
+	position:absolute;
+	right:300px;
+	top:14px;
+
+}
+
+.iconnetflix{
+	width: 120px;
+	position:absolute;
+	left:100px;
+	top:18px;
+
+}
+
+/*-----------------Barre de navigation------------------*/
+
+.navigation {
+	margin: 0;
+	padding: 8px 0 8px 16px;
+	width: 100%;
+	background: linear-gradient(to right, #333333, #505050);
+	position: fixed;
+	z-index: 100;	
+	display: inline-block;
+	
+  }
+  
+.navigation a {
+	float: right;
+	margin-right: 4%;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: x-large;
+  }
+  
+  .navigation a:hover {
+	background-color: #ddd;
+	color: #F23912;
+	font-style: italic;
+	border-radius: 20px;
+  }
+
+.logocdpmenu
+{
+	position:fixed;
+	left:20px;
+	top:8px;
+	width: 360px;
+	z-index: 110; /*arrière plan*/
+}
+
+/*-----------------Article------------------*/
+
+article
+			{
+			border: 5px solid #bd2d29;
+			position:absolute;
+			width: 95%;
+			top:100px;
+			border-radius: 4px;
+
+ 			margin-bottom: 10px;
+			margin-left:20px;
+
+ 			padding-bottom:40px;
+			padding-left:20px;
+			padding-right: 20px;
+
+			background-color:#394249;
+			}
+
+/*------------------Titre-----------------------*/
+
+article h2
+			{
+			border-color:#bd2e2973	;
+			color:#ffffff;
+   			border-style:double none;
+   			border-width:0 0 3px 0;
+   			font-size: xx-large;
+			text-align: center;
+			font-family: 8px monospace;
+			font-variant: small-caps;
+			text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+			}
+
+
+/*---------------------------Animation----------------------------*/
+
+			/* Image */
+.overlay-image {
+	position: relative;
+	width: 500px;
+	padding: 0 0 10px 0;
+   }
+
+ 
+.overlay-image .image {
+	display: block;
+	width: 500px;
+	height: auto;
+	border-radius: 15px;
+
+   }
+   
+   			/* Texte */
+.overlay-image .text {
+	color: #fff;
+	font-size: 16px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;	
+	line-height: 1.5em;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 170%;
+	transform: translate(-50%, -50%);
+	width: 120%;
+   }
+
+   			/* Overlay */
+.overlay-image .hover {
+	
+	top: 0;
+	height: 97%;
+	width: 100%;
+	opacity: 0;
+   }
+
+.overlay-image:hover .hover {
+	position: absolute;
+	border-radius:15px;
+	opacity: 1;
+	transition: .5s ease;
+	background-color: rgba(0,0,0,0.5);
+   }
+
+.overlay-image:hover .normal { /*pour rendre le titre saison invisible*/
+	opacity: 0;
+   }
+
+
+/*------------------------------------------------------------------------------------------------*/

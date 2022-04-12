@@ -1,0 +1,371 @@
+
+/*-----------------Body------------------*/
+
+body
+{
+   background-color:#808080;
+	color:#ffffff;
+   font-family:"Trebuchet MS",Verdana,sans-serif;
+   font-size:small;
+   margin:0;
+   padding:0;
+}
+
+/*-----------------Footer------------------*/
+
+footer {
+	width: 100%;
+	bottom: 0;
+	padding: 8px 0 8px 16px;
+	background-color: #333333;
+	position: fixed;
+	z-index: 100;
+	font-size: medium;
+}
+
+p{
+	text-align:center;
+}
+
+.iconinsta{
+	width: 40px;
+	position:absolute;
+	right:100px;
+	top:14px;
+
+}
+
+.iconfacebook{
+	width: 40px;
+	position:absolute;
+	right:200px;
+	top:14px;
+
+}
+
+.icontwitter{
+	width: 40px;
+	position:absolute;
+	right:300px;
+	top:14px;
+
+}
+
+.iconnetflix{
+	width: 120px;
+	position:absolute;
+	left:100px;
+	top:18px;
+
+}
+
+
+/*-----------------Barre de navigation------------------*/
+
+.navigation {
+	margin: 0;
+	padding: 8px 0 8px 16px;
+	width: 100%;
+	background: linear-gradient(to right, #333333, #505050);
+	position: fixed;
+	z-index: 100;	
+	display: inline-block;
+  }
+  
+.navigation a {
+	float: right;
+	margin-right: 4%;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: x-large;
+  }
+  
+  .navigation a:hover {
+	background-color: #ddd;
+	color: #F23912;
+	font-style: italic;
+	border-radius: 20px;
+  }
+
+.logocdpmenu
+{
+	position:fixed;
+	left:20px;
+	top:8px;
+	width: 360px;
+	z-index: 110; /*arrière plan*/
+}
+
+/*-----------------Article------------------*/
+
+article
+			{
+			border: 5px solid #bd2d29;
+			position:absolute;
+			width: 95%;
+			top:100px;
+			border-radius: 4px;
+
+ 			margin-bottom: 10px;
+			margin-left:20px;
+
+ 			padding-bottom:40px;
+			padding-left:20px;
+			padding-right: 20px;
+
+			background-color:#394249;
+			}
+
+/*-----------------Div "présentation"------------------*/
+
+aside{
+	border: 8px double #394249;
+	font-family:monospace;
+	float: right;
+	position:absolute;
+	text-align: center;
+
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	top: 195px;
+	left: 840px;
+	width:auto;
+	margin-right: 4%;
+	padding-top: 10px;
+
+	font-size: medium;
+	background: #bd2e298f;
+}
+
+/*-----------------Image principale------------------*/
+
+.fondlcdpimage
+{
+	width:769px;	
+
+}
+
+/*---------------Description image principale--------------*/
+
+figcaption{
+	background-color:#bd2e2950;	
+	position:absolute;
+	color: #ffffff;
+	margin: 5px 100px 50px 200px;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+   	font-size: medium;
+	font-style:italic;
+}
+
+/*------------------Titre-----------------------*/
+
+article h2
+			{
+			border-color:#bd2e2973	;
+			color:#ffffff;
+   			border-style:double none;
+   			border-width:0 0 3px 0;
+   			font-size: xx-large;
+			text-align: center;
+			font-family: 8px monospace;
+			font-variant: small-caps;
+			text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+			}
+
+
+/*----------------Diapo rond image avec fondu / partie Personnage--------------*/
+
+.d1{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;		
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu1 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu1{
+    0%{background-image: url("../images/tokyo1.png"  );}
+	20%{background-image: url("../images/tokyo2.png");}
+	40%{background-image: url("../images/tokyo2.png");}
+	60%{background-image: url("../images/tokyo3.png");}
+	80%{background-image: url("../images/tokyo3.png");}
+    100%{background-image: url("../images/tokyo1.png");}
+
+}
+
+.d2{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;	
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu2 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu2{
+    0%{background-image: url("../images/rio1.png");}
+	20%{background-image: url("../images/rio2.png");}
+	40%{background-image: url("../images/rio2.png");}
+	60%{background-image: url("../images/rio3.png");}
+	80%{background-image: url("../images/rio3.png");}
+    100%{background-image: url("../images/rio1.png");}
+
+
+	
+}
+
+.d3{
+    width: 100px;
+	height: 100px;
+	margin:0 0 0 5%;
+	border-radius: 80px;
+}
+
+.d4{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;	
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu4 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu4{
+    0%{background-image: url("../images/lisbonne1.png");}
+	20%{background-image: url("../images/lisbonne2.png");}
+	40%{background-image: url("../images/lisbonne2.png");}
+	60%{background-image: url("../images/lisbonne3.png");}
+	80%{background-image: url("../images/lisbonne3.png");}
+    100%{background-image: url("../images/lisbonne1.png");}
+}
+
+.d5{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;		
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu5 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu5{
+    0%{background-image: url("../images/profesor1.png");}
+	20%{background-image: url("../images/profesor2.png");}
+	40%{background-image: url("../images/profesor2.png");}
+	60%{background-image: url("../images/profesor3.png");}
+	80%{background-image: url("../images/profesor3.png");}
+    100%{background-image: url("../images/profesor1.png");}
+}
+
+.d6{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;		
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu6 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu6{
+    0%{background-image: url("../images/helsinki1.png");}
+	20%{background-image: url("../images/helsinki2.png");}
+	40%{background-image: url("../images/helsinki2.png");}
+	60%{background-image: url("../images/helsinki3.png");}
+	80%{background-image: url("../images/helsinki3.png");}
+    100%{background-image: url("../images/helsinki1.png");}
+}
+
+.d7{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;		
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu7 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu7{
+    0%{background-image: url("../images/denver1.png");}
+	20%{background-image: url("../images/denver2.png");}
+	40%{background-image: url("../images/denver2.png");}
+	60%{background-image: url("../images/denver3.png");}
+	80%{background-image: url("../images/denver3.png");}
+    100%{background-image: url("../images/denver1.png");}
+}
+
+.d8{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;		
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu8 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu8{
+    0%{background-image: url("../images/palermo1.png");}
+	20%{background-image: url("../images/palermo2.png");}
+	40%{background-image: url("../images/palermo2.png");}
+	60%{background-image: url("../images/palermo3.png");}
+	80%{background-image: url("../images/palermo3.png");}
+    100%{background-image: url("../images/palermo1.png");}
+}
+
+.d9{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;		
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu9 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu9{
+    0%{background-image: url("../images/monica1.png");}
+	20%{background-image: url("../images/monica2.png");}
+	40%{background-image: url("../images/monica2.png");}
+	60%{background-image: url("../images/monica3.png");}
+	80%{background-image: url("../images/monica3.png");}
+    100%{background-image: url("../images/monica1.png");}
+}
+
+.d10{
+    width: 100px;
+    height: 100px;
+	background-size: contain;
+	margin:0 0 0 45%;		
+	    /*premier : haut de l'image troisième bas de l'image quatrième déplacement a gauche*/
+	animation: fondu10 30s ease-in-out infinite both;
+	border-radius: 80px;
+}
+
+@keyframes fondu10{
+    0%{background-image: url("../images/nairobi1.png");}
+	20%{background-image: url("../images/nairobi2.png");}
+	40%{background-image: url("../images/nairobi2.png");}
+	60%{background-image: url("../images/nairobi3.png");}
+	80%{background-image: url("../images/nairobi3.png");}
+    100%{background-image: url("../images/nairobi1.png");}
+}
+
+/*-------------Faire disparaitre le trait bleu des images dans catégorie personnage-----------------*/
+
+*{
+	outline:0;
+}
+
+/*------------------------------------------------------------------------------------------------*/
